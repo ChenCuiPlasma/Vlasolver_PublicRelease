@@ -1,0 +1,18 @@
+CompileFlags:
+  Remove:
+    - "-fopenmp=*"
+    - "-Xcompiler"
+    - "-extended-lambda"
+    - "-arch=*"
+
+  Add:
+    - "-fopenmp"
+    - "-I/usr/lib/gcc/x86_64-linux-gnu/11/include"
+    - "-x"
+    - "cuda"
+    - "--cuda-path=/usr/local/cuda"
+    - "-D__CUDACC__"
+
+Diagnostics:
+  Suppress:
+    - "variadic_device_fn"

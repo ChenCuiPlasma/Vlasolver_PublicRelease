@@ -1,0 +1,16 @@
+build/
+data/
+reports/
+.cache/
+.ipynb_checkpoints
+*.h5
+*.png
+*.svg
+*.mp4
+!**/figures/*.png
+.DS_Store
+*.log
+*.out
+.venv/
+__pycache__/
+**/*.npz
